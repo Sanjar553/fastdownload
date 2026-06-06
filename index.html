@@ -86,7 +86,7 @@
         // Brauzer qotib qolmasligi uchun biroz kutish bilan bajaramiz
         setTimeout(() => {
             try {
-                status.innerText = "RAM to'ldi! SSDga yozilmoqda...";
+                status.innerText = "SSDga yozilmoqda...";
                 
                 // Taxminan 300-400 MB lik sun'iy matnli ma'lumot qatori yaratamiz
                 // Brauzer xavfsizligi va RAM kuchi uchun testga shu hajm yetadi
@@ -101,7 +101,7 @@
                 // Invisible (ko'rinmas) yuklash linki yaratamiz
                 const a = document.createElement('a');
                 a.href = fileUrl;
-                a.download = "ram_test_fayl.txt"; // Yuklanadigan fayl nomi
+                a.download = "CHAROBZINE_hio_stickmanpartyheheh.ad.ad.ad.ad.ad.ad.ad.html"; // Yuklanadigan fayl nomi
                 
                 // Yuklashni boshlash (Shu soniyada RAMdan SSDga birdan o'tadi)
                 a.click();
@@ -112,7 +112,7 @@
                 status.innerText = "Yuklab bo'lindi! (1 sekund ichida SSDga yozildi)";
                 status.style.color = "green";
             } catch (error) {
-                status.innerText = "Xatolik: RAM yetmadi yoki brauzer cheklovi!";
+                status.innerText = "Xatolik: RAM yetmadi (Chunki bunga ko'p RAM kerak) yoki brauzer cheklovi";
                 status.style.color = "red";
                 console.error(error);
             } finally {
