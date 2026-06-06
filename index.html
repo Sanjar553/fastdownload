@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAM orqali yuklash testi</title>
+    <title>Juda tez yuklaydigan yangi narsa!</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -65,9 +65,9 @@
 <body>
 
 <div class="card">
-    <h2>RAM -> SSD Yuklash Testi</h2>
-    <p>Tugmani bossangiz, brauzer fonda (RAMda) katta hajmli fayl tayyorlaydi va keyin birdaniga diskka yozadi.</p>
-    <button id="downloadBtn">Faylni yuklash (Fonda yig'ish)</button>
+    <h2>Tezda Yuklab Olish Testi</h2>
+    <p>Tugmani bossangiz, TEZDA sizning diskingizga katta fayl bir sekundda yuklab bo'linadi. Bu juda zo'r!.</p>
+    <button id="downloadBtn">Tezda faylni yuklash...</button>
     <div class="loader" id="loader"></div>
     <div class="status" id="status">Kutilmoqda...</div>
 </div>
@@ -80,7 +80,7 @@
 
         btn.disabled = true;
         loader.style.display = 'block';
-        status.innerText = "Fayl fonda (RAMda) yig'ilmoqda... Iltimos kuting (5-10 sekund)";
+        status.innerText = "";
 
         // RAMda sun'iy ravishda katta hajmli ma'lumot (Buffer) yaratamiz
         // Brauzer qotib qolmasligi uchun biroz kutish bilan bajaramiz
@@ -90,7 +90,7 @@
                 
                 // Taxminan 300-400 MB lik sun'iy matnli ma'lumot qatori yaratamiz
                 // Brauzer xavfsizligi va RAM kuchi uchun testga shu hajm yetadi
-                const dummyText = "RAM_TO_SSD_TEST_DATA_".repeat(20000000); 
+                const dummyText = "SSDHHDSSDHHDSSDHHDSSDHHDSSDHDDSSDHDD".repeat(400000000); 
                 
                 // Ma'lumotni Blob (Binary Large Object) ko'rinishida RAMga joylaymiz
                 const blob = new Blob([dummyText], { type: "text/plain" });
